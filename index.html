@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Descargar MG Pelis - MG Studios</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Div App Header -->
+        <header>
+            <div class="app-header">
+                <img src="Icon/icon.png" alt="App Icon" class="logo">
+                <div class="app-info">
+                    <h1>MG Pelis</h1>
+                    <p class="creator">MG Studios</p>
+                </div>
+                <!-- Icono de descarga -->
+                <div class="download-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sección de Capturas de Pantalla -->
+        <div class="screenshots">
+            <h2>Capturas de Pantalla</h2>
+            <img src="Icon/icon.png" alt="Captura de pantalla 1">
+            <img src="Icon/icon.png" alt="Captura de pantalla 2">
+            <img src="Icon/icon.png" alt="Captura de pantalla 3">
+        </div>
+
+        <!-- Sección de Características -->
+        <div class="features">
+            <h2>Características</h2>
+            <p><strong>Nombre:</strong> MG Pelis</p>
+            <p><strong>Tamaño:</strong> 50 MB</p>
+            <p><strong>Género:</strong> Entretenimiento</p>
+            <p><strong>Desarrolladora:</strong> MG Studios</p>
+            <p><strong>Creadores:</strong> Brayan MG Y Marly MG</p>
+            <p><strong>Fecha de Actualización:</strong> Agosto 2024</p>
+            <p><strong>Descripción:</strong> Una aplicación de gestión de películas con características avanzadas.</p>
+        </div>
+    </div>
+
+    <!-- Botón de cambio de tema -->
+    <button class="theme-toggle">
+        <i class="fas fa-sun"></i> <!-- Cambiar por luna si el tema es oscuro -->
+    </button>
+
+    <!-- Div Oculto para Seleccionar Plataforma -->
+    <div class="overlay">
+        <div class="overlay-content">
+            <button class="close-overlay">&times;</button>
+            <h2>Descargar Para</h2>
+            <div class="platform-selection">
+                <div class="platform-box" id="android">
+                    <i class="fab fa-android"></i>
+                    <span>Android</span>
+                </div>
+                <div class="platform-box" id="windows">
+                    <i class="fab fa-windows"></i>
+                    <span>Windows</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- SweetAlert library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>

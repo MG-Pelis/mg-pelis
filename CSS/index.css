@@ -1,0 +1,301 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px; /* Espacio entre el header y la sección de capturas */
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 97%;
+    background-color: var(--header-bg);
+    border-radius: 18px;
+    box-shadow: var(--header-shadow);
+    transition: box-shadow 0.3s, background-color 0.3s;
+    position: relative; /* Para posicionar el ícono de descarga */
+}
+
+.logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.app-info {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.creator {
+    font-size: 0.9em;
+    color: gray;
+    margin: 5px 0 15px 0;
+}
+
+/* Icono de descarga */
+.download-icon {
+    position: absolute;
+    right: 20px;
+    background-color: var(--download-icon-bg);
+    color: var(--download-icon-color);
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-icon i {
+    font-size: 1.5em;
+}
+
+/* Sección de Capturas */
+.screenshots {
+    margin-bottom: 20px; /* Espacio entre la sección de capturas y características */
+    padding: 20px;
+    width: 97%;
+    background-color: var(--header-bg); /* Mismo color de fondo que app-header */
+    border-radius: 18px;
+    box-shadow: var(--header-shadow); /* Mismo efecto de sombra */
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.screenshots h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+}
+
+/* Estilo de las imágenes de captura */
+.screenshots img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Sección de Características */
+.features {
+    padding: 20px;
+    width: 97%;
+    background-color: var(--header-bg); /* Mismo color de fondo que app-header */
+    border-radius: 18px;
+    box-shadow: var(--header-shadow); /* Mismo efecto de sombra */
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.features p {
+    margin: 5px 0;
+}
+
+/* Botón de cambio de tema */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: var(--theme-button-bg);
+    color: var(--theme-button-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle i {
+    font-size: 1.2em;
+}
+
+/* Overlay */
+.overlay {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content {
+    background-color: var(--overlay-bg);
+    color: var(--overlay-text);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 90%; /* Asegura que el contenido no exceda el ancho de la pantalla */
+    width: 300px; /* Ancho fijo para el overlay */
+    box-sizing: border-box;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    color: var(--overlay-text);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Sección de Selección de Plataforma */
+.platform-selection {
+    display: flex;
+    flex-direction: row; /* Cambiar a columna en pantallas pequeñas */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+.platform-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--header-bg);
+    border-radius: 10px;
+    box-shadow: var(--header-shadow);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    justify-content:  space-between;
+    flex: 1;
+}
+
+.platform-box i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.platform-box:hover {
+    background-color: var(--button-bg);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.platform-box span {
+    font-size: 1em;
+}
+
+/* Tema claro */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #f0f0f0;
+    --header-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --button-border: #0056b3;
+    --theme-button-bg: #000000;
+    --theme-button-color: #ffffff;
+    --download-icon-bg: #000000; /* Fondo negro para tema claro */
+    --download-icon-color: #ffffff; /* Color del ícono para tema claro */
+    --overlay-bg: #ffffff;
+    --overlay-text: #000000;
+}
+
+/* Tema oscuro */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #1e1e1e;
+    --header-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    --button-bg: #1a73e8;
+    --button-text: #ffffff;
+    --button-border: #0056b3;
+    --theme-button-bg: #ffffff;
+    --theme-button-color: #000000;
+    --download-icon-bg: #ffffff; /* Fondo blanco para tema oscuro */
+    --download-icon-color: #000000; /* Color del ícono para tema oscuro */
+    --overlay-bg: #1e1e1e;
+    --overlay-text: #e0e0e0;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .app-header {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .download-icon {
+        padding: 8px;
+    }
+
+    .download-icon i {
+        font-size: 1.2em;
+    }
+
+    .screenshots{
+        width: 89%;
+    }
+
+    .screenshots img {
+        width: 80px;
+    }
+
+    .features{
+        width: 89%;
+    }
+
+    .features p {
+        font-size: 0.9em;
+    }
+
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        bottom: 50px;
+        right: 30px;
+        padding: 8px;
+    }
+
+    .theme-toggle i {
+        font-size: 1em;
+    }
+
+    .platform-selection {
+        flex-direction: column; /* Asegura que se muestren en columna en pantallas pequeñas */
+    }
+
+    .platform-box {
+        flex-direction: column; /* Ajusta el diseño para pantallas pequeñas */
+        text-align: center;
+    }
+
+    .platform-box i {
+        margin-bottom: 5px;
+    }
+}
