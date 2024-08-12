@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         confirmButtonText: 'Aceptar'
                     });
                 } else if (box.id === 'android') {
-                    window.location.href = 'app/MG Pelis.apk'; // Ajusta la ruta según sea necesario
+                    window.location.href = 'https://www.mediafire.com/file/asjdpcct5q7eigf/MG_Pelis.apk/file'; // Ajusta la ruta según sea necesario
                 }
             });
         });
